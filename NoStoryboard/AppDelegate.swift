@@ -21,7 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         
+        //Initilizing the CollectionView in the window
+        let flowLayout = UICollectionViewFlowLayout()
+        let mainvc = ViewController(collectionViewLayout: flowLayout)
         
+        //Setting the main view in the window
+        window?.rootViewController = NavigationBarController(rootViewController: mainvc)
         return true
     }
 

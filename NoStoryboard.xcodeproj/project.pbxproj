@@ -11,6 +11,8 @@
 		AC5F4FE120C0594900BF5700 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F4FE020C0594900BF5700 /* ViewController.swift */; };
 		AC5F4FE620C0594B00BF5700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5F4FE520C0594B00BF5700 /* Assets.xcassets */; };
 		AC5F4FE920C0594B00BF5700 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5F4FE720C0594B00BF5700 /* LaunchScreen.storyboard */; };
+		AC5F4FF120C0EA2E00BF5700 /* NavigationBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F4FF020C0EA2E00BF5700 /* NavigationBarController.swift */; };
+		AC5F4FF320C0EA7800BF5700 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5F4FF220C0EA7800BF5700 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		AC5F4FE520C0594B00BF5700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC5F4FE820C0594B00BF5700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC5F4FEA20C0594B00BF5700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC5F4FF020C0EA2E00BF5700 /* NavigationBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarController.swift; sourceTree = "<group>"; };
+		AC5F4FF220C0EA7800BF5700 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				AC5F4FE520C0594B00BF5700 /* Assets.xcassets */,
 				AC5F4FE720C0594B00BF5700 /* LaunchScreen.storyboard */,
 				AC5F4FEA20C0594B00BF5700 /* Info.plist */,
+				AC5F4FF020C0EA2E00BF5700 /* NavigationBarController.swift */,
+				AC5F4FF220C0EA7800BF5700 /* Colors.swift */,
 			);
 			path = NoStoryboard;
 			sourceTree = "<group>";
@@ -132,6 +138,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC5F4FE120C0594900BF5700 /* ViewController.swift in Sources */,
+				AC5F4FF320C0EA7800BF5700 /* Colors.swift in Sources */,
+				AC5F4FF120C0EA2E00BF5700 /* NavigationBarController.swift in Sources */,
 				AC5F4FDF20C0594900BF5700 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
