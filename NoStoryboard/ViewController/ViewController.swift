@@ -13,6 +13,25 @@ class ViewController: UICollectionViewController,UICollectionViewDelegateFlowLay
     //MARK: Variables
     let cellId = "cellId"
     
+    let teams : [Team] = [Team(image: "arsenal", name: "Arsenal"),
+                          Team(image: "chelsea", name: "Chealsea"),
+                          Team(image: "everton", name: "Everton"),
+                          Team(image: "leicester", name: "Leicester"),
+                          Team(image: "liverpool", name: "Liverpool"),
+                          Team(image: "mu", name: "Man Utd"),
+                          Team(image: "mc", name: "Man City"),
+                          Team(image: "newcastle", name: "New Castle"),
+                          Team(image: "tottenham", name: "TottenHam"),
+                          Team(image: "arsenal", name: "Arsenal"),
+                          Team(image: "chelsea", name: "Chealsea"),
+                          Team(image: "everton", name: "Everton"),
+                          Team(image: "leicester", name: "Leicester"),
+                          Team(image: "liverpool", name: "Liverpool"),
+                          Team(image: "mu", name: "Man Utd"),
+                          Team(image: "mc", name: "Man City"),
+                          Team(image: "newcastle", name: "New Castle"),
+                          Team(image: "tottenham", name: "TottenHam")]
+    
     //MARK: Functions
 
     override func viewDidLoad() {
@@ -30,7 +49,7 @@ class ViewController: UICollectionViewController,UICollectionViewDelegateFlowLay
     
     //Returns the total number of the item to entered in the section
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return teams.count
     }
     
     //Returns the size of the single as CGsize
@@ -46,29 +65,8 @@ class ViewController: UICollectionViewController,UICollectionViewDelegateFlowLay
     //Return a cell(In this case : Custom Defined Team Cell)
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! TeamCell
+        cell.team = teams[indexPath.item]
         return cell
     }
-    
-    
-    
-}
-
-
-class TeamCell : UICollectionViewCell{
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setup()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    //Setup up the cell
-    func setup(){
-        self.backgroundColor = Colors.color_4
-    }
-    
 }
 
