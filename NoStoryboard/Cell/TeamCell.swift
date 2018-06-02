@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TinyConstraints
 
 class TeamCell: UICollectionViewCell {
     //Initilizer
@@ -23,16 +24,15 @@ class TeamCell: UICollectionViewCell {
         teamNameLabel.translatesAutoresizingMaskIntoConstraints = false
         
         //Constraint for the Image View
-        teamImageView.topAnchor.constraint(equalTo: topAnchor, constant: 10).isActive = true
-        teamImageView.leftAnchor.constraint(equalTo: leftAnchor, constant: 10).isActive = true
-        teamImageView.rightAnchor.constraint(equalTo: rightAnchor, constant: -10).isActive = true
-        teamImageView.heightAnchor.constraint(equalToConstant: 60).isActive = true
+//        teamImageView.topAnchor.constraint(equalTo: topAnchor, constant: 10).isActive = true
+//        teamImageView.leftAnchor.constraint(equalTo: leftAnchor, constant: 10).isActive = true
+//        teamImageView.rightAnchor.constraint(equalTo: rightAnchor, constant: -10).isActive = true
+//        teamImageView.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        teamImageView.anchor(top: self.safeTopAnchor, left: self.safeLeftAnchor, right: self.safeRightAnchor, bottom: nil, paddingTop: 10, paddingLeft: 10, paddingRight: 10, paddingBottom: 0,width: 0,height: 60)
+        
         
         //Constraint for the Label
-        teamNameLabel.topAnchor.constraint(equalTo: teamImageView.bottomAnchor, constant: 0).isActive = true
-        teamNameLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: 0).isActive = true
-        teamNameLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 0).isActive = true
-        teamNameLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0).isActive = true
+       teamNameLabel.anchor(top: teamImageView.safeBottomAnchor, left: self.safeLeftAnchor, right: self.safeRightAnchor, bottom: self.safeBottomAnchor, paddingTop: 0, paddingLeft: 0, paddingRight: 0, paddingBottom: 0)
     }
     
     required init?(coder aDecoder: NSCoder) {
